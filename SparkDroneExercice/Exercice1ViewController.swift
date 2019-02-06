@@ -29,7 +29,7 @@ class Exercice1ViewController: UIViewController {
         MovementManager.shared.appendAction(action: Action(action: .TakeOff, duration: 0))
         MovementManager.shared.appendMovement(movement: Movement(direction: .Up, duration: 5))
         MovementManager.shared.appendMovement(movement: Movement(direction: .Stop, duration: 3))
-        MovementManager.shared.appendAction(action: Action(action: .CameraDown, duration: 3))
+        MovementManager.shared.appendAction(action: Action(action: .CameraDown, duration: 8))
         MovementManager.shared.appendAction(action: Action(action: .Custom, duration: 1) {
             self.takeScreenshot()
         })

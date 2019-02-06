@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26114EAB220AAF3B006612AC /* Pods_SparkDroneExercice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26114EAA220AAF3B006612AC /* Pods_SparkDroneExercice.framework */; };
-		26114EAD220AAF42006612AC /* DJIWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26114EAC220AAF42006612AC /* DJIWidget.framework */; };
 		2685AAC1220A8C8D000C1930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2685AAC0220A8C8D000C1930 /* AppDelegate.swift */; };
 		2685AAC3220A8C8D000C1930 /* Exercice1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2685AAC2220A8C8D000C1930 /* Exercice1ViewController.swift */; };
 		2685AAC6220A8C8D000C1930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2685AAC4220A8C8D000C1930 /* Main.storyboard */; };
@@ -23,6 +21,9 @@
 		26AB1881220A9745001766C5 /* GimbalDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB187E220A9745001766C5 /* GimbalDirection.swift */; };
 		26AB1882220A9745001766C5 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB187F220A9745001766C5 /* Action.swift */; };
 		26AB1885220A9758001766C5 /* CGPoints+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1884220A9758001766C5 /* CGPoints+Extensions.swift */; };
+		26AC5872220AC8330012044A /* VideoPreviewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AC5870220AC82C0012044A /* VideoPreviewer.framework */; };
+		26AC5873220AC8330012044A /* VideoPreviewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26AC5870220AC82C0012044A /* VideoPreviewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A28152B319EB3648EBF2AE1 /* libPods-SparkDroneExercice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 873D352839338A58488596BE /* libPods-SparkDroneExercice.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				26AC5873220AC8330012044A /* VideoPreviewer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,8 +41,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		26114EAA220AAF3B006612AC /* Pods_SparkDroneExercice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SparkDroneExercice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		26114EAC220AAF42006612AC /* DJIWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DJIWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2685AABD220A8C8D000C1930 /* SparkDroneExercice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkDroneExercice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2685AAC0220A8C8D000C1930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2685AAC2220A8C8D000C1930 /* Exercice1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice1ViewController.swift; sourceTree = "<group>"; };
@@ -57,8 +57,10 @@
 		26AB187E220A9745001766C5 /* GimbalDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GimbalDirection.swift; sourceTree = "<group>"; };
 		26AB187F220A9745001766C5 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		26AB1884220A9758001766C5 /* CGPoints+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoints+Extensions.swift"; sourceTree = "<group>"; };
+		26AC5870220AC82C0012044A /* VideoPreviewer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VideoPreviewer.framework; sourceTree = "<group>"; };
 		6EEF443B993338DEF683FB4D /* Pods-SparkDroneExercice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDroneExercice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SparkDroneExercice/Pods-SparkDroneExercice.debug.xcconfig"; sourceTree = "<group>"; };
 		73CB9118EE9C7DB19F9CFEC7 /* Pods-SparkDroneExercice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDroneExercice.release.xcconfig"; path = "Pods/Target Support Files/Pods-SparkDroneExercice/Pods-SparkDroneExercice.release.xcconfig"; sourceTree = "<group>"; };
+		873D352839338A58488596BE /* libPods-SparkDroneExercice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SparkDroneExercice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,30 +68,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26114EAD220AAF42006612AC /* DJIWidget.framework in Frameworks */,
-				26114EAB220AAF3B006612AC /* Pods_SparkDroneExercice.framework in Frameworks */,
+				5A28152B319EB3648EBF2AE1 /* libPods-SparkDroneExercice.a in Frameworks */,
+				26AC5872220AC8330012044A /* VideoPreviewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26114EA9220AAF3B006612AC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				26114EAC220AAF42006612AC /* DJIWidget.framework */,
-				26114EAA220AAF3B006612AC /* Pods_SparkDroneExercice.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		2685AAB4220A8C8D000C1930 = {
 			isa = PBXGroup;
 			children = (
 				2685AABF220A8C8D000C1930 /* SparkDroneExercice */,
 				2685AABE220A8C8D000C1930 /* Products */,
 				560D51A4308AFA5EABEDD135 /* Pods */,
-				26114EA9220AAF3B006612AC /* Frameworks */,
+				E288927839C12A4DA913C4B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +107,7 @@
 				2685AAC7220A8C90000C1930 /* Assets.xcassets */,
 				2685AAC9220A8C90000C1930 /* LaunchScreen.storyboard */,
 				2685AACC220A8C90000C1930 /* Info.plist */,
+				26AC5870220AC82C0012044A /* VideoPreviewer.framework */,
 			);
 			path = SparkDroneExercice;
 			sourceTree = "<group>";
@@ -154,6 +148,14 @@
 				73CB9118EE9C7DB19F9CFEC7 /* Pods-SparkDroneExercice.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E288927839C12A4DA913C4B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				873D352839338A58488596BE /* libPods-SparkDroneExercice.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +261,6 @@
 				"${PODS_ROOT}/Target Support Files/Pods-SparkDroneExercice/Pods-SparkDroneExercice-frameworks.sh",
 				"${PODS_ROOT}/DJI-SDK-iOS/iOS_Mobile_SDK/DJISDK.framework",
 				"${PODS_ROOT}/DJIWidget/FFmpeg/FFmpeg.framework",
-				"${BUILT_PRODUCTS_DIR}/DJIWidget/DJIWidget.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -267,7 +268,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJISDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFmpeg.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJIWidget.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -457,7 +457,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -485,7 +485,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Release;
 		};
