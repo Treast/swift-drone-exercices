@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26012301220B54D300CADAC6 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26012300220B54D300CADAC6 /* TestViewController.swift */; };
 		2685AAC1220A8C8D000C1930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2685AAC0220A8C8D000C1930 /* AppDelegate.swift */; };
 		2685AAC3220A8C8D000C1930 /* Exercice1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2685AAC2220A8C8D000C1930 /* Exercice1ViewController.swift */; };
 		2685AAC6220A8C8D000C1930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2685AAC4220A8C8D000C1930 /* Main.storyboard */; };
 		2685AAC8220A8C90000C1930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2685AAC7220A8C90000C1930 /* Assets.xcassets */; };
 		2685AACB220A8C90000C1930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2685AAC9220A8C90000C1930 /* LaunchScreen.storyboard */; };
+		26A08CCC220B577D00CBBE25 /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A08CCB220B577D00CBBE25 /* ConnectionViewController.swift */; };
 		26AB1870220A93AA001766C5 /* Exercice2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB186F220A93AA001766C5 /* Exercice2ViewController.swift */; };
 		26AB1877220A9711001766C5 /* GimbalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1872220A9711001766C5 /* GimbalManager.swift */; };
 		26AB1878220A9711001766C5 /* DirectionSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1873220A9711001766C5 /* DirectionSequence.swift */; };
@@ -41,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		26012300220B54D300CADAC6 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2685AABD220A8C8D000C1930 /* SparkDroneExercice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkDroneExercice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2685AAC0220A8C8D000C1930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2685AAC2220A8C8D000C1930 /* Exercice1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice1ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		2685AAC7220A8C90000C1930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2685AACA220A8C90000C1930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2685AACC220A8C90000C1930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26A08CCB220B577D00CBBE25 /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
 		26AB186F220A93AA001766C5 /* Exercice2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice2ViewController.swift; sourceTree = "<group>"; };
 		26AB1872220A9711001766C5 /* GimbalManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GimbalManager.swift; sourceTree = "<group>"; };
 		26AB1873220A9711001766C5 /* DirectionSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionSequence.swift; sourceTree = "<group>"; };
@@ -103,11 +107,13 @@
 				2685AAC0220A8C8D000C1930 /* AppDelegate.swift */,
 				2685AAC2220A8C8D000C1930 /* Exercice1ViewController.swift */,
 				26AB186F220A93AA001766C5 /* Exercice2ViewController.swift */,
+				26012300220B54D300CADAC6 /* TestViewController.swift */,
 				2685AAC4220A8C8D000C1930 /* Main.storyboard */,
 				2685AAC7220A8C90000C1930 /* Assets.xcassets */,
 				2685AAC9220A8C90000C1930 /* LaunchScreen.storyboard */,
 				2685AACC220A8C90000C1930 /* Info.plist */,
 				26AC5870220AC82C0012044A /* VideoPreviewer.framework */,
+				26A08CCB220B577D00CBBE25 /* ConnectionViewController.swift */,
 			);
 			path = SparkDroneExercice;
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A08CCC220B577D00CBBE25 /* ConnectionViewController.swift in Sources */,
 				26AB1881220A9745001766C5 /* GimbalDirection.swift in Sources */,
 				26AB187A220A9711001766C5 /* MovementManager.swift in Sources */,
 				26AB1879220A9711001766C5 /* ProductCommunicationManager.swift in Sources */,
@@ -291,6 +298,7 @@
 				26AB1880220A9745001766C5 /* Movement.swift in Sources */,
 				26AB1877220A9711001766C5 /* GimbalManager.swift in Sources */,
 				26AB1870220A93AA001766C5 /* Exercice2ViewController.swift in Sources */,
+				26012301220B54D300CADAC6 /* TestViewController.swift in Sources */,
 				2685AAC1220A8C8D000C1930 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
