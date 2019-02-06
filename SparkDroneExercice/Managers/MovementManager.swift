@@ -110,6 +110,7 @@ class MovementManager {
                     if let mySpark = DJISDKManager.product() as? DJIAircraft {
                         mySpark.mobileRemoteController?.rightStickVertical = self.speedFactor * Float(move.direction.value().z)
                         mySpark.mobileRemoteController?.rightStickHorizontal = self.speedFactor * Float(move.direction.value().x)
+                        mySpark.mobileRemoteController?.leftStickVertical = self.speedFactor * Float(move.direction.value().y)
                     }
                 }
             }
@@ -131,6 +132,12 @@ class MovementManager {
                     case .CameraDown:
                         GimbalManager.shared.moveGimbal(direction: .Down)
                     case .None:
+                        break
+                    case .TakeOff:
+                        self.takeOff()
+                    case .Land:
+                        self.land()
+                    case .TurnBack:
                         break
                     case .Custom:
                         if let actionCallBack = action.callback {

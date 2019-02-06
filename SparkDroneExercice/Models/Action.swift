@@ -22,7 +22,7 @@ struct Action {
     
     // Possibilité de rajouter une 3ème direction et des rotations
     enum ActionType: String, CaseIterable {
-        case CameraUp, CameraDown, Custom, None
+        case TakeOff, Land, CameraUp, CameraDown, TurnBack, Custom, None
     }
     
     func description() -> String {

@@ -20,7 +20,7 @@ struct Movement {
     
     // Possibilité de rajouter une 3ème direction et des rotations
     enum Direction: String, CaseIterable {
-        case Stop, Front, Left, Right, Back, FrontLeft, FrontRight, BackRight, BackLeft
+        case Stop, Front, Left, Right, Back, FrontLeft, FrontRight, BackRight, BackLeft, Up, Down
         
         func value() -> Point3D {
             switch self {
@@ -42,6 +42,10 @@ struct Movement {
                 return Point3D(x: 1, y: 0, z: -1)
             case .BackLeft:
                 return Point3D(x: -1, y: 0, z: -1)
+            case .Up:
+                return Point3D(x: 0, y: 1, z: 0)
+            case .Down:
+                return Point3D(x: 0, y: -1, z: 0)
             }
         }
     }

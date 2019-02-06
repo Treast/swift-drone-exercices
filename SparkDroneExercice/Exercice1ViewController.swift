@@ -20,7 +20,40 @@ class Exercice1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        defineSequence()
+    }
+    
+    func defineSequence() {
+        MovementManager.shared.reset()
         
+        MovementManager.shared.appendAction(action: Action(action: .TakeOff, duration: 0))
+        MovementManager.shared.appendMovement(movement: Movement(direction: .Up, duration: 5))
+        MovementManager.shared.appendMovement(movement: Movement(direction: .Stop, duration: 3))
+        MovementManager.shared.appendAction(action: Action(action: .CameraDown, duration: 3))
+        MovementManager.shared.appendAction(action: Action(action: .Custom, duration: 1) {
+            self.takeScreenshot()
+        })
+        MovementManager.shared.appendAction(action: Action(action: .CameraUp, duration: 1))
+        
+        MovementManager.shared.appendMovement(movement: Movement(direction: .Back, duration: 3))
+        MovementManager.shared.appendMovement(movement: Movement(direction: .Down, duration: 3))
+        MovementManager.shared.appendMovement(movement: Movement(direction: .Front, duration: 3))
+        MovementManager.shared.appendMovement(movement: Movement(direction: .Up, duration: 3))
+        MovementManager.shared.appendMovement(movement: Movement(direction: .Stop, duration: 3))
+        MovementManager.shared.appendAction(action: Action(action: .CameraDown, duration: 3))
+        MovementManager.shared.appendAction(action: Action(action: .Custom, duration: 1) {
+            self.takeScreenshot()
+        })
+        MovementManager.shared.appendAction(action: Action(action: .CameraUp, duration: 1))
+        MovementManager.shared.appendAction(action: Action(action: .Land, duration: 2))
+    }
+    
+    @IBAction func runAction(_ sender: Any) {
+        MovementManager.shared.play()
+    }
+    
+    @IBAction func stopAction(_ sender: Any) {
+        MovementManager.shared.stop()
     }
     
     override func viewWillAppear(_ animated: Bool) {
