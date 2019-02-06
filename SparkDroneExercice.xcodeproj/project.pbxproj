@@ -8,21 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		2685AAC1220A8C8D000C1930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2685AAC0220A8C8D000C1930 /* AppDelegate.swift */; };
-		2685AAC3220A8C8D000C1930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2685AAC2220A8C8D000C1930 /* ViewController.swift */; };
+		2685AAC3220A8C8D000C1930 /* Exercice1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2685AAC2220A8C8D000C1930 /* Exercice1ViewController.swift */; };
 		2685AAC6220A8C8D000C1930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2685AAC4220A8C8D000C1930 /* Main.storyboard */; };
 		2685AAC8220A8C90000C1930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2685AAC7220A8C90000C1930 /* Assets.xcassets */; };
 		2685AACB220A8C90000C1930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2685AAC9220A8C90000C1930 /* LaunchScreen.storyboard */; };
+		26AB1870220A93AA001766C5 /* Exercice2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB186F220A93AA001766C5 /* Exercice2ViewController.swift */; };
+		26AB1877220A9711001766C5 /* GimbalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1872220A9711001766C5 /* GimbalManager.swift */; };
+		26AB1878220A9711001766C5 /* DirectionSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1873220A9711001766C5 /* DirectionSequence.swift */; };
+		26AB1879220A9711001766C5 /* ProductCommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1874220A9711001766C5 /* ProductCommunicationManager.swift */; };
+		26AB187A220A9711001766C5 /* MovementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1875220A9711001766C5 /* MovementManager.swift */; };
+		26AB1880220A9745001766C5 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB187D220A9745001766C5 /* Movement.swift */; };
+		26AB1881220A9745001766C5 /* GimbalDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB187E220A9745001766C5 /* GimbalDirection.swift */; };
+		26AB1882220A9745001766C5 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB187F220A9745001766C5 /* Action.swift */; };
+		26AB1885220A9758001766C5 /* CGPoints+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1884220A9758001766C5 /* CGPoints+Extensions.swift */; };
 		3D07AEA31A0ED956D601AA16 /* Pods_SparkDroneExercice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862BA09FC4AF5CD2EA94B7B1 /* Pods_SparkDroneExercice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2685AABD220A8C8D000C1930 /* SparkDroneExercice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkDroneExercice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2685AAC0220A8C8D000C1930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2685AAC2220A8C8D000C1930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2685AAC2220A8C8D000C1930 /* Exercice1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice1ViewController.swift; sourceTree = "<group>"; };
 		2685AAC5220A8C8D000C1930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2685AAC7220A8C90000C1930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2685AACA220A8C90000C1930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2685AACC220A8C90000C1930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26AB186F220A93AA001766C5 /* Exercice2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice2ViewController.swift; sourceTree = "<group>"; };
+		26AB1872220A9711001766C5 /* GimbalManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GimbalManager.swift; sourceTree = "<group>"; };
+		26AB1873220A9711001766C5 /* DirectionSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionSequence.swift; sourceTree = "<group>"; };
+		26AB1874220A9711001766C5 /* ProductCommunicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCommunicationManager.swift; sourceTree = "<group>"; };
+		26AB1875220A9711001766C5 /* MovementManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovementManager.swift; sourceTree = "<group>"; };
+		26AB187D220A9745001766C5 /* Movement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movement.swift; sourceTree = "<group>"; };
+		26AB187E220A9745001766C5 /* GimbalDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GimbalDirection.swift; sourceTree = "<group>"; };
+		26AB187F220A9745001766C5 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		26AB1884220A9758001766C5 /* CGPoints+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoints+Extensions.swift"; sourceTree = "<group>"; };
 		6EEF443B993338DEF683FB4D /* Pods-SparkDroneExercice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDroneExercice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SparkDroneExercice/Pods-SparkDroneExercice.debug.xcconfig"; sourceTree = "<group>"; };
 		73CB9118EE9C7DB19F9CFEC7 /* Pods-SparkDroneExercice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDroneExercice.release.xcconfig"; path = "Pods/Target Support Files/Pods-SparkDroneExercice/Pods-SparkDroneExercice.release.xcconfig"; sourceTree = "<group>"; };
 		862BA09FC4AF5CD2EA94B7B1 /* Pods_SparkDroneExercice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SparkDroneExercice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,14 +79,47 @@
 		2685AABF220A8C8D000C1930 /* SparkDroneExercice */ = {
 			isa = PBXGroup;
 			children = (
+				26AB1883220A9758001766C5 /* Extensions */,
+				26AB187C220A9745001766C5 /* Models */,
+				26AB1871220A96FB001766C5 /* Managers */,
 				2685AAC0220A8C8D000C1930 /* AppDelegate.swift */,
-				2685AAC2220A8C8D000C1930 /* ViewController.swift */,
+				2685AAC2220A8C8D000C1930 /* Exercice1ViewController.swift */,
+				26AB186F220A93AA001766C5 /* Exercice2ViewController.swift */,
 				2685AAC4220A8C8D000C1930 /* Main.storyboard */,
 				2685AAC7220A8C90000C1930 /* Assets.xcassets */,
 				2685AAC9220A8C90000C1930 /* LaunchScreen.storyboard */,
 				2685AACC220A8C90000C1930 /* Info.plist */,
 			);
 			path = SparkDroneExercice;
+			sourceTree = "<group>";
+		};
+		26AB1871220A96FB001766C5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				26AB1873220A9711001766C5 /* DirectionSequence.swift */,
+				26AB1872220A9711001766C5 /* GimbalManager.swift */,
+				26AB1875220A9711001766C5 /* MovementManager.swift */,
+				26AB1874220A9711001766C5 /* ProductCommunicationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		26AB187C220A9745001766C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26AB187D220A9745001766C5 /* Movement.swift */,
+				26AB187E220A9745001766C5 /* GimbalDirection.swift */,
+				26AB187F220A9745001766C5 /* Action.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26AB1883220A9758001766C5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				26AB1884220A9758001766C5 /* CGPoints+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		560D51A4308AFA5EABEDD135 /* Pods */ = {
@@ -208,7 +259,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2685AAC3220A8C8D000C1930 /* ViewController.swift in Sources */,
+				26AB1881220A9745001766C5 /* GimbalDirection.swift in Sources */,
+				26AB187A220A9711001766C5 /* MovementManager.swift in Sources */,
+				26AB1879220A9711001766C5 /* ProductCommunicationManager.swift in Sources */,
+				26AB1882220A9745001766C5 /* Action.swift in Sources */,
+				2685AAC3220A8C8D000C1930 /* Exercice1ViewController.swift in Sources */,
+				26AB1878220A9711001766C5 /* DirectionSequence.swift in Sources */,
+				26AB1885220A9758001766C5 /* CGPoints+Extensions.swift in Sources */,
+				26AB1880220A9745001766C5 /* Movement.swift in Sources */,
+				26AB1877220A9711001766C5 /* GimbalManager.swift in Sources */,
+				26AB1870220A93AA001766C5 /* Exercice2ViewController.swift in Sources */,
 				2685AAC1220A8C8D000C1930 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,12 +418,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54PCF2T5ZE;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SparkDroneExercice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.vincentriva.spark-exercice.SparkDroneExercice";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.vincentriva.SparkDroneExercice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -377,12 +438,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54PCF2T5ZE;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SparkDroneExercice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.vincentriva.spark-exercice.SparkDroneExercice";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.vincentriva.SparkDroneExercice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
