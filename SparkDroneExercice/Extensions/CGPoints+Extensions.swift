@@ -10,11 +10,11 @@ import Foundation
 import CoreGraphics
 
 func degreesToRadians(degrees: CGFloat) -> CGFloat {
-    return degrees * CGFloat(M_PI) / 180
+    return degrees * CGFloat(Double.pi) / 180
 }
 
 func radiansToDegress(radians: CGFloat) -> CGFloat {
-    return radians * 180 / CGFloat(M_PI)
+    return radians * 180 / CGFloat(Double.pi)
 }
 
 public extension CGPoint {

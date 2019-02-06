@@ -16,8 +16,8 @@ class MovementManager {
     var movements = [Movement]()
     var actions = [Action]()
     var speedFactor: Float = 0.0
-    var startPoint = CGPoint(x: 0, y: 0)
-    var isTesting = false
+    var startPoint = Point3D(x: 0, y: 0, z: 0)
+    var isTesting = true
     
     func reset() {
         movements = []
@@ -108,7 +108,7 @@ class MovementManager {
                     print(move.description())
                 } else {
                     if let mySpark = DJISDKManager.product() as? DJIAircraft {
-                        mySpark.mobileRemoteController?.rightStickVertical = self.speedFactor * Float(move.direction.value().y)
+                        mySpark.mobileRemoteController?.rightStickVertical = self.speedFactor * Float(move.direction.value().z)
                         mySpark.mobileRemoteController?.rightStickHorizontal = self.speedFactor * Float(move.direction.value().x)
                     }
                 }

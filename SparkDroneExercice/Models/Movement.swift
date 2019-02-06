@@ -22,26 +22,26 @@ struct Movement {
     enum Direction: String, CaseIterable {
         case Stop, Front, Left, Right, Back, FrontLeft, FrontRight, BackRight, BackLeft
         
-        func value() -> CGPoint {
+        func value() -> Point3D {
             switch self {
             case .Stop:
-                return CGPoint(x: 0, y: 0)
+                return Point3D(x: 0, y: 0, z: 0)
             case .Front:
-                return CGPoint(x: 0, y: 1)
+                return Point3D(x: 0, y: 0, z: 1)
             case .Left:
-                return CGPoint(x: -1, y: 0)
+                return Point3D(x: -1, y: 0, z: 0)
             case .Right:
-                return CGPoint(x: 1, y: 0)
+                return Point3D(x: 1, y: 0, z: 0)
             case .Back:
-                return CGPoint(x: 0, y: -1)
+                return Point3D(x: 0, y: 0, z: -1)
             case .FrontLeft:
-                return CGPoint(x: -1, y: 1)
+                return Point3D(x: -1, y: 0, z: 1)
             case .FrontRight:
-                return CGPoint(x: 1, y: 1)
+                return Point3D(x: 1, y: 0, z: 1)
             case .BackRight:
-                return CGPoint(x: 1, y: -1)
+                return Point3D(x: 1, y: 0, z: -1)
             case .BackLeft:
-                return CGPoint(x: -1, y: -1)
+                return Point3D(x: -1, y: 0, z: -1)
             }
         }
     }
