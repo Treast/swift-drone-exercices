@@ -34,14 +34,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0D8-HX-auC">
                                         <rect key="frame" x="0.0" y="299" width="375" height="149.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dzy-IV-Hk3">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y7M-Gd-ie5">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="149.5"/>
-                                                <color key="backgroundColor" red="1" green="0.14608687197934922" blue="0.11217556093921588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7J-4p-8p8">
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-ZQ-kaC">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="149.5"/>
-                                                <color key="backgroundColor" red="0.87579490572805863" green="1" blue="0.015113907925772829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
+                                            </imageView>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRu-G2-Zyg">
@@ -61,6 +59,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Exercice 1" id="TtE-HC-s7h"/>
+                    <connections>
+                        <outlet property="cameraView" destination="rb4-Vh-b8e" id="9jA-BY-8Va"/>
+                        <outlet property="snapshotView1" destination="Y7M-Gd-ie5" id="2ee-cF-c9i"/>
+                        <outlet property="snapshotView2" destination="ahc-ZQ-kaC" id="eVk-HM-R1Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,6 +75,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="REX-RY-fnZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wel-lX-6mO">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
