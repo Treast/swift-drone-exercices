@@ -18,6 +18,7 @@ class ConnectionViewController: UIViewController {
     
     
     @IBAction func connect(_ sender: Any) {
+        print("Logging")
         guard let connectedKey = DJIProductKey(param: DJIParamConnection) else {
             NSLog("Error creating the connectedKey")
             return;

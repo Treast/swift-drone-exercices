@@ -17,7 +17,11 @@ class TestViewController: UIViewController {
     }
     
     @IBAction func takeOff(_ sender: Any) {
-        MovementManager.shared.takeOff()
+        MovementManager.shared.reset()
+        MovementManager.shared.appendAction(action: Action(action: .CameraDown, duration: 2))
+        MovementManager.shared.appendAction(action: Action(action: .CameraUp, duration: 2))
+        MovementManager.shared.play()
+        //MovementManager.shared.takeOff()
     }
     
     @IBAction func activateMode(_ sender: Any) {

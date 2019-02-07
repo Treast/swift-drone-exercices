@@ -16,8 +16,8 @@ class MovementManager {
     var movements = [Movement]()
     var actions = [Action]()
     var speedFactor: Float = 0.0
-    var startPoint = Point3D(x: 0, y: 0, z: 0)
-    var isTesting = true
+    var startPoint = Point3D(x: 0, y: 0, z: 0, w: 0)
+    var isTesting = false
     
     func reset() {
         movements = []
@@ -111,6 +111,7 @@ class MovementManager {
                         mySpark.mobileRemoteController?.rightStickVertical = self.speedFactor * Float(move.direction.value().z)
                         mySpark.mobileRemoteController?.rightStickHorizontal = self.speedFactor * Float(move.direction.value().x)
                         mySpark.mobileRemoteController?.leftStickVertical = self.speedFactor * Float(move.direction.value().y)
+                        mySpark.mobileRemoteController?.leftStickHorizontal = self.speedFactor * Float(move.direction.value().w)
                     }
                 }
             }
@@ -137,6 +138,25 @@ class MovementManager {
                         self.takeOff()
                     case .Land:
                         self.land()
+                    case .TurnBack:
+                        break
+                    case .Custom:
+                        if let actionCallBack = action.callback {
+                            actionCallBack()
+                        }
+                    }
+                } else {
+                    switch(action.action) {
+                    case .CameraUp:
+                        GimbalManager.shared.moveGimbal(direction: .Up)
+                    case .CameraDown:
+                        GimbalManager.shared.moveGimbal(direction: .Down)
+                    case .None:
+                        break
+                    case .TakeOff:
+                        break
+                    case .Land:
+                        break
                     case .TurnBack:
                         break
                     case .Custom:
