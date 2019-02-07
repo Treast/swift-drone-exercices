@@ -51,6 +51,7 @@ class Exercice1ViewController: UIViewController {
         MovementManager.shared.appendMovement(movement: Movement(direction: .Stop, duration: 2))
         
         MovementManager.shared.speedFactor = 0.2
+        MovementManager.shared.rotationFactor = 2.4
     }
     
     @IBAction func runAction(_ sender: Any) {

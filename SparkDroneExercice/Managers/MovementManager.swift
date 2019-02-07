@@ -16,6 +16,7 @@ class MovementManager {
     var movements = [Movement]()
     var actions = [Action]()
     var speedFactor: Float = 0.0
+    var rotationFactor: Float = 0.0
     var startPoint = Point3D(x: 0, y: 0, z: 0, w: 0)
     var isTesting = false
     
@@ -111,7 +112,7 @@ class MovementManager {
                         mySpark.mobileRemoteController?.rightStickVertical = self.speedFactor * Float(move.direction.value().z)
                         mySpark.mobileRemoteController?.rightStickHorizontal = self.speedFactor * Float(move.direction.value().x)
                         mySpark.mobileRemoteController?.leftStickVertical = self.speedFactor * Float(move.direction.value().y)
-                        mySpark.mobileRemoteController?.leftStickHorizontal = self.speedFactor * Float(move.direction.value().w)
+                        mySpark.mobileRemoteController?.leftStickHorizontal = self.rotationFactor * Float(move.direction.value().w)
                     }
                 }
             }

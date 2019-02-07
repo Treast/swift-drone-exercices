@@ -12,35 +12,43 @@ import DJISDK
 
 class TestViewController: UIViewController {
     
+    @IBOutlet weak var movementLabel: UILabel!
+    @IBOutlet weak var rotationLabel: UILabel!
+    @IBOutlet weak var movementFactor: UISlider!
+    
+    @IBOutlet weak var rotationFactor: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    @IBAction func takeOff(_ sender: Any) {
-        MovementManager.shared.reset()
-        MovementManager.shared.appendAction(action: Action(action: .CameraDown, duration: 2))
-        MovementManager.shared.appendAction(action: Action(action: .CameraUp, duration: 2))
-        MovementManager.shared.play()
-        //MovementManager.shared.takeOff()
+    @IBAction func changeMovementFactor(_ sender: Any) {
+        movementLabel.text = "Movement speed (\(movementFactor.value))"
     }
     
-    @IBAction func activateMode(_ sender: Any) {
-        if let spark = DJISDKManager.product() as? DJIAircraft {
-            spark.flightController?.flightAssistant?.setAdvancedGestureControlEnabled(true) { err in
-                if let error = err {
-                    print("Error: \(error)")
-                } else {
-                    print("Flight Assistant On")
-                }
-            }
-        }
+    @IBAction func changeRotationFactor(_ sender: Any) {
+        rotationLabel.text = "Rotation speed (\(rotationFactor.value))"
+    }
+    
+    @IBAction func run(_ sender: Any) {
+        MovementManager.shared.speedFactor = movementFactor.value
+        MovementManager.shared.rotationFactor = rotationFactor.value
+        MovementManager.shared.reset()
+        MovementManager.shared.appendMovement(movement: Movement(direction: .Circle, duration: 0))
+        MovementManager.shared.play()
+    }
+    
+    @IBAction func takeOff(_ sender: Any) {
+        MovementManager.shared.takeOff()
     }
     
     @IBAction func stop(_ sender: Any) {
+        MovementManager.shared.reset()
         MovementManager.shared.stop()
     }
     
     @IBAction func normalLand(_ sender: Any) {
+        MovementManager.shared.stop()
         MovementManager.shared.land()
     }
 }
